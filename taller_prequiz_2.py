@@ -24,6 +24,10 @@ m2=b.reshape(4000,300)
 print(m2.size) #se cambia la forma, pero se conserva el tamaño
 
 #5: pasar datos de matriz a dataframe
-pd.DataFrame(m2)
-print(pd.DataFrame(m2))
+def pasar_df(m2):
+
+    df=pd.DataFrame(m2)
+    return df
+
+#6: 
 
