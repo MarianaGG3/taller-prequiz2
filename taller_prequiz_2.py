@@ -1,6 +1,8 @@
 #taller pre quiz 2
 import numpy as np 
 import matplotlib as plt
+import pandas as pd 
+
 
 #1: matriz aleatoria
 mtz=np.random.randint(1000, size=(200, 200, 30,1))
@@ -20,3 +22,8 @@ print(b.dtype)
 #4:pasar matriz a 2D
 m2=b.reshape(4000,300)
 print(m2.size) #se cambia la forma, pero se conserva el tamaño
+
+#5: pasar datos de matriz a dataframe
+pd.DataFrame(m2)
+print(pd.DataFrame(m2))
+
