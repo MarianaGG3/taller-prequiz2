@@ -2,7 +2,10 @@
 import numpy as np 
 import matplotlib as plt
 import pandas as pd 
+from csv import reader as reader_csv;
 
+import scipy.signal as signal;
+import scipy.io as sio;
 
 #1: matriz aleatoria
 mtz=np.random.randint(1000, size=(200, 200, 30,1))
@@ -27,7 +30,19 @@ print(m2.size) #se cambia la forma, pero se conserva el tamaño
 def pasar_df(m2):
 
     df=pd.DataFrame(m2)
-    return df
+    return (df)
 
-#6: 
+#6: funciones para cargar archivos .mat y .csv
+def cargar(a):
+    if a.endswith(".mat"):
+        arch_cargar=scipy.io.loadmat(a)
+        return (arch_cargar)
+
+    else:
+        a.endswith(".csv"):
+        cargar_csv=pd.read_csv(a)
+        return(cargar_csv)
+
+#7: funciones suma,resta  
+    
 
