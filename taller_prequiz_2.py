@@ -16,3 +16,7 @@ print(b.size)
 print(b.ndim)
 print(b.shape)
 print(b.dtype)
+
+#4:pasar matriz a 2D
+m2=b.reshape(4000,300)
+print(m2.size) #se cambia la forma, pero se conserva el tamaño
