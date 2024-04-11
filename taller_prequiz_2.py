@@ -58,6 +58,10 @@ def promedio(datos, eje):
 
 def desviac_estandar(datos, eje):
     np.std(datos, axis=eje)
-    
 
+#8: 
+#no cargué el archivo, porque no me dio el internet para cargarlo
+arch=pd.read_csv("")
+arch.head()
+arch.loc[,,,],["","",""]
 
